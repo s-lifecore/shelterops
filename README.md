@@ -27,3 +27,4 @@ HTML/CSS研修向けに制作した避難所運営シミュレーション。
 
 HTML/CSSのみで動的表現を追求。
 研修教材としての活用。# shelterops
+# shelterops
