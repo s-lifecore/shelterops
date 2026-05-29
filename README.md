@@ -1,6 +1,7 @@
 # ShelterOps
 
-HTML/CSS研修向けに制作した避難所運営シミュレーション。
+- HTML/CSS研修向けに制作した避難所簡易運営シミュレーション。
+- [CirKit](https://cirkit.jp)での研修をもとに、HTML/CSSの技術を駆使して実装。
 
 ## 特徴
 
@@ -25,6 +26,15 @@ HTML/CSS研修向けに制作した避難所運営シミュレーション。
 
 ## 制作目的
 
-HTML/CSSのみで動的表現を追求。
-研修教材としての活用。# shelterops
-# shelterops
+- HTML/CSSのみで動的表現を追求。
+- 研修教材としての活用。
+
+## ライセンス
+
+MIT License
+
+## 作者
+
+- [GitHub](https://github.com/s-lifecore/shelterops)
+- [Twitter](https://twitter.com/ocean_t_umi)
+- [qiita](https://qiita.com/takumi1227)
