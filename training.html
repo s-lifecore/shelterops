@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelterOps | 演習</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <h1>ShelterOps</h1>
+
+            <p class="subtitle">
+                避難所運営演習
+            </p>
+
+        </div>
+    </header>
+
+
+    <nav>
+        <div class="container nav-links">
+
+            <a href="index.html">ホーム</a>
+            <a href="training.html">演習</a>
+            <a href="manual.html">マニュアル</a>
+            <a href="tech.html">使用技術</a>
+            <a href="terms.html">利用規約</a>
+            <a href="policy.html">ポリシー</a>
+
+        </div>
+    </nav>
+
+
+    <main class="container">
+
+        <section class="mission">
+
+            <h2>
+                MISSION 01
+            </h2>
+
+            <p>
+                停電と発熱者対応を行い、
+                避難所安定度を維持せよ。
+            </p>
+
+        </section>
+
+
+        <section class="grid">
+
+            <!-- 状況 -->
+            <div class="card">
+
+                <h2>避難所状況</h2>
+
+                <p>避難所安定度</p>
+
+                <div class="meter">
+                    <div class="meter-fill"></div>
+                </div>
+
+                <p>78%</p>
+
+                <hr>
+
+                <p>収容率：85%</p>
+
+                <div class="meter">
+                    <div class="danger"></div>
+                </div>
+
+                <p>食料：2日分</p>
+
+                <div class="meter">
+                    <div class="warning"></div>
+                </div>
+
+                <p>水：不足</p>
+
+                <div class="meter">
+                    <div class="alert"></div>
+                </div>
+
+            </div>
+
+
+            <!-- ログ -->
+            <div class="card">
+
+                <h2>災害ログ</h2>
+
+                <ul class="logs">
+
+                    <li>
+                        21:14 停電発生
+                    </li>
+
+                    <li>
+                        21:21 高齢者避難者 到着
+                    </li>
+
+                    <li class="danger-text">
+                        21:33 発熱者2名
+                    </li>
+
+                    <li>
+                        21:40 支援物資遅延
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- 操作 -->
+            <div class="card">
+
+                <h2>対応操作</h2>
+
+                <!-- 発電機 -->
+                <input type="checkbox" id="power">
+
+                <label class="action" for="power">
+                    発電機を起動
+                </label>
+
+                <div class="result">
+                    ✓ 非常電源を復旧しました
+                </div>
+
+
+                <!-- 発熱者 -->
+                <input type="checkbox" id="medical">
+
+                <label class="action" for="medical">
+                    発熱者を隔離
+                </label>
+
+                <div class="result">
+                    ✓ 医療スペースを確保しました
+                </div>
+
+
+                <!-- 支援 -->
+                <input type="checkbox" id="support">
+
+                <label class="action" for="support">
+                    支援要請を送信
+                </label>
+
+                <div class="result">
+                    ✓ 支援要請を送信しました
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>獲得バッジ</h2>
+
+            <div class="badges">
+
+                <div class="badge">
+                    🏅 初動対応
+                </div>
+
+                <div class="badge">
+                    🏅 医療対応
+                </div>
+
+                <div class="badge">
+                    🏅 物資管理
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 エンジニア研修，Sudo
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

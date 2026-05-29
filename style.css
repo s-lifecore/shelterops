@@ -1,0 +1,314 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   LAYOUT
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #1f3c5a;
+    color: white;
+    padding: 28px 0;
+}
+
+.subtitle {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background: white;
+    border-bottom: 1px solid #d9dee3;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    padding: 16px 0;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f3c5a;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    padding: 40px 0;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: white;
+    border: 1px solid #d9dee3;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.card h2,
+.card h3 {
+    margin-bottom: 16px;
+    color: #1f3c5a;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    background: #1f3c5a;
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   MISSION
+========================= */
+
+.mission {
+    background: #1f3c5a;
+    color: white;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+
+/* =========================
+   METER
+========================= */
+
+.meter {
+    width: 100%;
+    height: 16px;
+    background: #ddd;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.meter-fill {
+    width: 78%;
+    height: 100%;
+    background: #5cb85c;
+}
+
+.danger {
+    width: 85%;
+    height: 100%;
+    background: #d9534f;
+}
+
+.warning {
+    width: 45%;
+    height: 100%;
+    background: #f0ad4e;
+}
+
+.alert {
+    width: 20%;
+    height: 100%;
+    background: #c9302c;
+    animation: blink 1s infinite;
+}
+
+
+/* =========================
+   LOGS
+========================= */
+
+.logs {
+    padding-left: 20px;
+}
+
+.danger-text {
+    color: #c9302c;
+    font-weight: bold;
+}
+
+
+/* =========================
+   ACTION
+========================= */
+
+input {
+    display: none;
+}
+
+.action {
+    display: block;
+    background: #1f3c5a;
+    color: white;
+    padding: 14px;
+    border-radius: 6px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.action:hover {
+    opacity: 0.8;
+}
+
+.result {
+    display: none;
+    background: #eef6ee;
+    border: 1px solid #b9d8b9;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+
+/* checkbox hack */
+
+input:checked+.action+.result {
+    display: block;
+}
+
+
+/* =========================
+   BADGES
+========================= */
+
+.badges {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: #1f3c5a;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 999px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #1f3c5a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes blink {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+}
